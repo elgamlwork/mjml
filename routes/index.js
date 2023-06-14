@@ -18,7 +18,6 @@ router.post("/code", function (req, res, next) {
                         }
                         p {
                             margin: 0px;
-                            line-height: normal !important;
                         }
                     </mj-style>
                 </mj-head>
