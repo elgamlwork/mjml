@@ -9,6 +9,7 @@ router.post("/", function (req, res, next) {
         const html = mjml2html(`
             <mjml>
                 <mj-head>
+                @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                     <mj-style>
                         * { 
@@ -19,12 +20,14 @@ router.post("/", function (req, res, next) {
                         p {
                             margin: 0px;
                         }
+                        .align_center { text-align: center}
+                        .align_left { text-align: left}
+                        .align_right { text-align: right}
                     </mj-style>
                 </mj-head>
                 ${req.body.code}
             </mjml>
         `);
-        console.log(html.html);
         res.json({
             data: html?.html,
             status: true,
