@@ -4,7 +4,7 @@ var router = express.Router();
 var mjml2html = require("mjml");
 var bodyParser = require("body-parser");
 
-router.post("/code", function (req, res, next) {
+router.post("/", function (req, res, next) {
     try {
         const html = mjml2html(`
             <mjml>
