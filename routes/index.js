@@ -28,7 +28,7 @@ router.post("/", function (req, res, next) {
                         html,body { 
                             font-family: Cairo  !important;
                         }
-                        .align_center { text-align: center, vertical: center}
+                        .align_center { text-align: center; vertical: center}
                         .align_left { text-align: left}
                         .align_right { text-align: right}
                         .align_full { text-align: center, width: 100%}
