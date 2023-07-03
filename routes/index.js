@@ -18,15 +18,17 @@ router.post("/", function (req, res, next) {
                             box-sizing: border-box;
                             font-family: Cairo;
                         }
-                        p {
+                        p, a, b, i {
                             margin: 0px;
+                            font-family: Cairo !important;
                         }
-                        body { 
+                        html,body { 
                             font-family: Cairo;
                         }
                         .align_center { text-align: center}
                         .align_left { text-align: left}
                         .align_right { text-align: right}
+                        .align_full { text-align: center, width: 100%}
                     </mj-style>
                 </mj-head>
                 ${req.body.code}
