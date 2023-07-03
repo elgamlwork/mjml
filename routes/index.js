@@ -16,14 +16,14 @@ router.post("/", function (req, res, next) {
                             padding: 0px;
                             margin: 0px;
                             box-sizing: border-box;
-                            font-family: Cairo;
+                            font-family: Cairo  !important;
                         }
-                        p, a, b, i {
+                        p {
                             margin: 0px;
                             font-family: Cairo !important;
                         }
                         html,body { 
-                            font-family: Cairo;
+                            font-family: Cairo  !important;
                         }
                         .align_center { text-align: center}
                         .align_left { text-align: left}
